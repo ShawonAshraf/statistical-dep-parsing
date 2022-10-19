@@ -1,1 +1,1 @@
-# statisical-dep-parsing
+# statistical-dep-parsing

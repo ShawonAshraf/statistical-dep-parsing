@@ -9,8 +9,8 @@ class Conll06_Token(object):
                  pos: str,
                  xpos: str,
                  morph: str,
-                 head: str,
-                 rel: str, *args, **kwargs) -> None:
+                 head: int,
+                 rel: str) -> None:
 
         self.token_id = token_id
         self.form = form
@@ -23,5 +23,5 @@ class Conll06_Token(object):
 
 
 class ConLL06_Sentence(object):
-    def __init__(self, head: str, tokens: List[Conll06_Token], *args, **kwargs) -> None:
+    def __init__(self, tokens: List[Conll06_Token], *args, **kwargs) -> None:
         pass
